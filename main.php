@@ -2,26 +2,19 @@
 
 require "rle.php";
 
-echo "\n\n===Test encode_rle===\n\n";
-echo encode_rle("AAABBBBCC");
-echo "\n";
-//d'autres tests ici
+//echo encode_rle("AAABBBBCC");
+//echo encode_rle("AAABB5BBCC"); => erreur
+
+//echo decode_rle("3A4B2C");
+//echo decode_rle("3A'4B2C"); => erreur
+
+//echo encode_advanced_rle("./src/iggy.bmp", "./bmp2.oui");
+//echo encode_advanced_rle("./src/mondrian.bmp", "./mondrian2.bmp");
+//echo encode_advanced_rle("./src/image.bmp", "./image2.bmp");
+
+//echo encode_advanced_rle("./src/iggy.bmp", "./iggy.bmp");
 
 
-echo "\n\n===Test decode_rle===\n\n";
-echo decode_rle("3A4B2C");
-echo "\n";
-//d'autres tests ici
-
-
-echo "\n\n===Test encode_advanced_rle===\n\n";
-echo encode_advanced_rle("src/iggy.bmp", "toto");
-echo "\n";
-//d'autres tests ici
-
-
-echo "\n\n===Test decode_advanced_rle===\n\n";
-echo decode_advanced_rle("toto", "toto.bmp");
-echo "\n";
-//d'autres tests ici
+//echo decode_advanced_rle("./src/encoded", "./src/toto.bmp");
+//echo decode_advanced_rle("./src/encoded_false", "./src/toto.bmp"); 
 ?>

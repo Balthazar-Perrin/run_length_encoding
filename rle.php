@@ -17,7 +17,7 @@ function encode_rle($str) {
     $cpt++;
     }
     $result .= $cpt.$char;
-    return $result;
+    return $result."\n";
 }
 
 function decode_rle($str) {
@@ -42,7 +42,7 @@ function decode_rle($str) {
             $result .= $str[$i];
         }
     }
-    return $result;
+    return $result."\n";
 }
 
 function encode_advanced_rle(string $path_to_encode, string $result_path) {
@@ -138,7 +138,7 @@ function encode_advanced_rle(string $path_to_encode, string $result_path) {
     
     
     
-    return $result_path;
+    return $result_path."\n";
 }
 
 function decode_advanced_rle(string $path_to_encode, string $result_path) {
@@ -193,7 +193,7 @@ function decode_advanced_rle(string $path_to_encode, string $result_path) {
         fclose($fichier);
     
     
-    return $result_path;
+    return $result_path."\n";
 }
 
 ?>
